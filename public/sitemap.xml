@@ -5,7 +5,7 @@
 
   <!-- Página principal -->
   <url>
-    <loc>https://giovanarocha.com.br/</loc>
+    <loc>https://atlasgms.github.io/giovanarochabeuty/public/index.html</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -13,28 +13,29 @@
 
   <!-- Seções internas via âncoras no homepage -->
   <url>
-    <loc>https://giovanarocha.com.br/#servicos</loc>
+    <loc>https://atlasgms.github.io/giovanarochabeuty/public/#servicos</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://giovanarocha.com.br/#cabelo</loc>
+    <loc>https://atlasgms.github.io/giovanarochabeuty/public/#cabelo</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://giovanarocha.com.br/#sobrancelhas</loc>
+    <loc>https://atlasgms.github.io/giovanarochabeuty/public/#sobrancelhas</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://giovanarocha.com.br/#contato</loc>
+    <loc>https://atlasgms.github.io/giovanarochabeuty/public/#contato</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
 </urlset>
+
