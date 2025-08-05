@@ -1,0 +1,275 @@
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+/* VARIÁVEIS DE CORES */
+:root {
+  --cor-primaria: #A96E55;
+  --cor-secundaria: #F9F2E8;
+  --cor-destaque: #5D4F49;
+  --cor-clara: #EBEBEB;
+  --cor-texto: #5D4F49;
+  --cor-texto-claro: #DDDDDE;
+  --cor-texto-claro-2: #c2bec0;
+  --cor-texto-medio: #CDC0B4;
+  --cor-fundo: #F9F2E8;
+  --cor-titulo: #A96E55;
+  --cor-link: #A96E55;
+}
+
+/* TIPOGRAFIA */
+h1, h2, h3 {
+  color: var(--cor-titulo);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--cor-link);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* LAYOUT GLOBAL */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+header, footer {
+  padding: 20px;
+  background-color: var(--cor-clara);
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #F9F2E8; /* cor suave da paleta */
+  position: relative;
+}
+header h1,p{
+  width: 1px;
+  height: 1px;
+  position:absolute;
+  overflow: hidden;
+}
+header img {
+  max-width: 150px;
+}
+
+/* Menu padrão (desktop) */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: row; /* <<< garante horizontal */
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #5D4F49;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #A96E55;
+}
+
+/* Menu Hamburguer (aparece só no mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #5D4F49;
+  cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  max-height: 80vh;
+  width: 100%;
+  margin: 0;
+  color: #5D4F49; /* paleta da marca */
+  text-align: center;
+  overflow: hidden;
+}
+
+#hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centraliza no meio da tela */
+  max-width: 80%;
+  text-align: center;
+
+  /* Sombra para melhor leitura */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.slide-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--cor-clara);
+}
+
+.slide-text a {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Main*/
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+/* COMPONENTES */
+.cta {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cta a,
+.botao {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.botao:hover,
+.cta a:hover {
+  background-color: #8c573f;
+}
+
+/* RODAPÉ */
+footer a {
+  color: var(--cor-destaque);
+}
+
+/* RESPONSIVIDADE */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+#whatsapp-float-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* Verde oficial do WhatsApp */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+#whatsapp-float-button:hover {
+  background-color: #1ebe57;
+}
+
+#whatsapp-float-button img {
+  width: 32px;
+  height: 32px;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #F9F2E8;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
